@@ -2,10 +2,6 @@ body {
   margin: 0;
 }
 
-#test {
-  display: flex;
-}
-
 /* heading*/
 .heading {
   display: grid;
@@ -29,7 +25,7 @@ body {
 .item1 {
   grid-column: 3 / span 5;
   grid-row: 1 / span 2;
-  background-color: yellow;
+  background-color: #FFB939;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +54,7 @@ body {
 .item2 {
   grid-row: 3 / span 4;
   grid-column: 3 / span 5;
-  background-color: brown;
+  background-color: #F17949;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -82,21 +78,46 @@ nav ul {
   background-color: white;
   font-weight: bold;
   width: 131px;
-  display: flex;
-  justify-content: center;
+
   border: none;
 }
 
 .maincontent {
   background-color: #a9a19e;
+
 }
 
 .maincontent h1 {
   color: white;
   font-size: 45px;
-  margin: 0;
+  justify-content: flex-end;
+ /* display: flex;
+  height: 300px;
+  flex-direction: column;*/
+  width:314px ;
+  
 }
+.textinfo p{
+    display: flex;
+   
+    width: 280px;
 
+
+}
+.textinfo{
+    display: flex;
+    justify-content: space-around;
+    
+  
+
+    
+}
+.textinfo1{
+  margin-left: auto;
+   text-align: center;
+   width: 280px;
+    
+}
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -120,14 +141,31 @@ nav ul {
     
   
 }
-
-.img1 img {
-  background-color: #bad7f2;
+.image-container{
+    background-color: #bad7f2
 }
-
+.lady{
+    background-color:#FFB939;
+}
+.oldman{
+    background-color: #F17949;
+}
 .maincontent {
 }
-
+.image-container img {
+    width: 50%;
+    object-fit: cover;
+    object-position: 0% -1%;
+  }
+  .image-container {
+    width: 90%;
+    max-height: 15rem;
+    display: flex;
+    justify-content: center;
+    transform: translate(0, -1rem);
+    margin: auto;
+  }
+  
 .about {
   background-color: #fab131;
   text-align: center;
@@ -147,13 +185,6 @@ nav ul {
 .about p {
   width: 442px;
 }
-
-.image-container {
-  width: 100%;
-  max-height: 400px;
-  overflow: hidden;
-}
-
 .griditem {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -207,4 +238,7 @@ nav ul {
   grid-column: 1 / span 7;
   background-color: #777574;
   grid-row: 10 / 14;
+}
+@media screen and (max-width: 768px) {
+    
 }
