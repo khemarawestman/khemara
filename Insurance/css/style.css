@@ -1,6 +1,11 @@
 body {
   margin: 0;
 }
+
+#test {
+  display: flex;
+}
+
 /* heading*/
 .heading {
   display: grid;
@@ -45,7 +50,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 268px;
+  width: 354px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -113,14 +118,93 @@ nav ul {
   background-color: #bad7f2;
 }
 
+.img2 img {
+  background-color: yellow;
+}
+
+.img3 img {
+  background-color: red;
+}
 .maincontent {
 }
 
 .about {
   background-color: #fab131;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 680px;
 }
 
 .about h1 {
   color: white;
   font-size: 45px;
+  margin: 0;
+}
+
+.about p {
+  width: 442px;
+}
+
+.image-container {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.griditem {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(13, 1fr);
+}
+
+.item {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box1 {
+  background-color: #c7ddea;
+  grid-column: 1 / 2;
+  grid-row: 1 / 5;
+}
+.box2 {
+  background-color: #ffffff;
+  grid-column: 2 / 3;
+  grid-row: 1 / 5;
+}
+.box3 {
+  background-color: #ebebeb;
+  grid-column: 3 / 4;
+  grid-row: 1 / 5;
+}
+.box4 {
+  background-color: #ffffff;
+  grid-column: 1 / 2;
+  grid-row: 5 / 9;
+}
+
+.box5 {
+  background-color: #f17949;
+  grid-column: 2 / 3;
+  grid-row: 5 / 9;
+}
+
+.box6 {
+  background-color: #ffffff;
+  grid-column: 3 / 4;
+  grid-row: 5 / 9;
+}
+.box7 {
+  grid-column: 1 / span 7;
+  background-color: #a9a19e;
+}
+
+.box8 {
+  grid-column: 1 / span 7;
+  background-color: #777574;
+  grid-row: 10 / 14;
 }
