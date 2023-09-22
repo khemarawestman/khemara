@@ -99,22 +99,27 @@ nav ul {
   margin-right: auto;
   margin-left: auto;
   gap: 32px;
+  
 }
 
 .card {
   background-color: white;
+  
 }
 
 .card img {
-  width: 100%;
+    width: 200px;
+    height: 200px; 
+    object-fit: cover;
+    object-position: 60% 20%; 
+    
+  
 }
 
 .img1 img {
   background-color: #bad7f2;
 }
 
-.maincontent {
-}
 
 .about {
   background-color: #fab131;
