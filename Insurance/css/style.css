@@ -90,7 +90,6 @@ nav ul {
 
 .maincontent {
   background-color: #a9a19e;
-  position: relative;
 }
 
 .maincontent h1 {
@@ -123,9 +122,6 @@ nav ul {
   margin-right: auto;
   margin-left: auto;
   gap: 32px;
-  position: absolute;
-  display: flex;
-  justify-content: center;
 }
 .intoright {
   display: flex;
