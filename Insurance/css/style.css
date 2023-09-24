@@ -20,6 +20,7 @@ body {
   margin-left: auto;
   width: auto;
   display: flex;
+  flex-direction: column;
 }
 /* sidorna  */
 .item1 {
@@ -72,6 +73,12 @@ nav ul {
   margin-right: auto;
 }
 
+.item0 {
+  text-align: center;
+  padding-top: 190px;
+}
+
+
 .btn {
   border-radius: 100px;
   padding: 10px;
@@ -106,12 +113,10 @@ nav ul {
 }
 .textinfo{
     display: flex;
-    justify-content: space-around;
-    
-  
-
-    
+   flex-direction: column;
+   
 }
+
 .textinfo1{
   margin-left: auto;
    text-align: center;
@@ -126,8 +131,12 @@ nav ul {
   margin-left: auto;
   gap: 32px;
   
+  
 }
-
+.intoright{
+  display: flex;
+  justify-content: end;
+}
 .card {
   background-color: white;
   
@@ -138,23 +147,32 @@ nav ul {
     height: 200px; 
     object-fit: cover;
     object-position: 60% 20%; 
+    position: relative;
+    
     
   
 }
 .image-container{
-    background-color: #bad7f2
+    background-color: #bad7f2;
+   
+    
+ 
+   
 }
 .lady{
     background-color:#FFB939;
+
 }
 .oldman{
     background-color: #F17949;
+   
 }
 
 .image-container img {
     width: 50%;
     object-fit: cover;
     object-position: 0% -1%;
+    
   }
   .image-container {
     width: 90%;
@@ -163,8 +181,11 @@ nav ul {
     justify-content: center;
     transform: translate(0, -1rem);
     margin: auto;
+    
+     
+    
   }
-  
+ 
 .about {
   background-color: #fab131;
   text-align: center;
@@ -173,7 +194,9 @@ nav ul {
   align-items: center;
   flex-direction: column;
   height: 680px;
+
 }
+
 
 .about h1 {
   color: white;
@@ -190,12 +213,13 @@ nav ul {
   grid-template-rows: repeat(13, 1fr);
 }
 
-.item {
-  text-align: center;
+.item h3{
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
+
 .box1 {
   background-color: #c7ddea;
   grid-column: 1 / 2;
@@ -231,13 +255,45 @@ nav ul {
 .box7 {
   grid-column: 1 / span 7;
   background-color: #a9a19e;
+  display: flex;
+  justify-content: center;
 }
 
 .box8 {
   grid-column: 1 / span 7;
   background-color: #777574;
   grid-row: 10 / 14;
+
 }
+
+
 @media screen and (max-width: 768px) {
     
+}
+@media screen and (max-width: 400px) {
+  .heading{
+    display: flex;
+    flex-direction: column;
+  }
+  .item0 .item1{
+    display: flex;
+    flex-direction: column;
+  }
+  .maincontent{
+    display: flex;
+    flex-direction: column;
+  }
+  .cards{
+    display: flex;
+    flex-direction: column;
+  }
+  .about{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .griditem{
+    display: flex;
+    flex-direction: column;
+  }
 }
