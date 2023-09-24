@@ -20,6 +20,7 @@ body {
   margin-left: auto;
   width: auto;
   display: flex;
+  flex-direction: column;
 }
 /* sidorna  */
 .item1 {
@@ -72,6 +73,11 @@ nav ul {
   margin-right: auto;
 }
 
+.item0 {
+  text-align: center;
+  padding-top: 190px;
+}
+
 .btn {
   border-radius: 100px;
   padding: 10px;
@@ -121,7 +127,10 @@ nav ul {
   display: flex;
   justify-content: center;
 }
-
+.intoright {
+  display: flex;
+  justify-content: end;
+}
 .card {
   background-color: white;
 }
@@ -140,95 +149,130 @@ nav ul {
 }
 .oldman {
   background-color: #f17949;
-}
-.maincontent {
-}
-.image-container img {
-  width: 50%;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
-  object-position: 0% -1%;
-}
-.image-container {
-  width: 90%;
-  max-height: 15rem;
-  display: flex;
-  justify-content: center;
-  transform: translate(0, -1rem);
-  margin: auto;
-}
+  object-position: 60% 20%;
+  position: relative;
 
-.about {
-  background-color: #fab131;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 680px;
-}
+  .image-container img {
+    width: 50%;
+    object-fit: cover;
+    object-position: 0% -1%;
+  }
+  .image-container {
+    width: 90%;
+    max-height: 15rem;
+    display: flex;
+    justify-content: center;
+    transform: translate(0, -1rem);
+    margin: auto;
+  }
 
-.about h1 {
-  color: white;
-  font-size: 45px;
-  margin: 0;
-}
+  .about {
+    background-color: #fab131;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 680px;
+  }
 
-.about p {
-  width: 442px;
-}
-.griditem {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(13, 1fr);
-}
+  .about h1 {
+    color: white;
+    font-size: 45px;
+    margin: 0;
+  }
 
-.item {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.box1 {
-  background-color: #c7ddea;
-  grid-column: 1 / 2;
-  grid-row: 1 / 5;
-}
-.box2 {
-  background-color: #ffffff;
-  grid-column: 2 / 3;
-  grid-row: 1 / 5;
-}
-.box3 {
-  background-color: #ebebeb;
-  grid-column: 3 / 4;
-  grid-row: 1 / 5;
-}
-.box4 {
-  background-color: #ffffff;
-  grid-column: 1 / 2;
-  grid-row: 5 / 9;
-}
+  .about p {
+    width: 442px;
+  }
+  .griditem {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+  }
 
-.box5 {
-  background-color: #f17949;
-  grid-column: 2 / 3;
-  grid-row: 5 / 9;
-}
+  .item h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
-.box6 {
-  background-color: #ffffff;
-  grid-column: 3 / 4;
-  grid-row: 5 / 9;
-}
-.box7 {
-  grid-column: 1 / span 7;
-  background-color: #a9a19e;
-}
+  .box1 {
+    background-color: #c7ddea;
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+  }
+  .box2 {
+    background-color: #ffffff;
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+  }
+  .box3 {
+    background-color: #ebebeb;
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+  }
+  .box4 {
+    background-color: #ffffff;
+    grid-column: 1 / 2;
+    grid-row: 5 / 9;
+  }
 
-.box8 {
-  grid-column: 1 / span 7;
-  background-color: #777574;
-  grid-row: 10 / 14;
+  .box5 {
+    background-color: #f17949;
+    grid-column: 2 / 3;
+    grid-row: 5 / 9;
+  }
+
+  .box6 {
+    background-color: #ffffff;
+    grid-column: 3 / 4;
+    grid-row: 5 / 9;
+  }
+  .box7 {
+    grid-column: 1 / span 7;
+    background-color: #a9a19e;
+    display: flex;
+    justify-content: center;
+  }
+
+  .box8 {
+    grid-column: 1 / span 7;
+    background-color: #777574;
+    grid-row: 10 / 14;
+  }
+
+  @media screen and (max-width: 768px) {
+  }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
+  .heading {
+    display: flex;
+    flex-direction: column;
+  }
+  .item0 .item1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .maincontent {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .griditem {
+    display: flex;
+    flex-direction: column;
+  }
 }
